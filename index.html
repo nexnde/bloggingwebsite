@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GenZ-Blog "” An editorial blog exploring design, technology, and productivity. Premium perspectives for curious minds.">
+  <title>GenZ-Blog | Editorial Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">GenZ-Blog<span class="brand-dot">.</span></a>
+
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="blog.html"  class="nav-link">Journal</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="admin.html" class="btn btn-primary">Write +</a>
+        <button class="icon-btn mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- â”€â”€ Editorial Ticker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <div class="ticker-wrap" aria-label="Latest articles ticker" role="marquee">
+    <div class="ticker-label">Latest</div>
+    <div class="ticker-track">
+      <div class="ticker-content" id="ticker-content">
+        <span class="ticker-item"><span class="ticker-cat">Design</span> The Typographic Grid: Structure in Editorial Design</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">UI/UX</span> Functional Minimalism in UI Design</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Tech</span> The Renaissance of Vanilla JavaScript</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Design</span> Embracing the Asymmetric Web</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Productivity</span> Deep Work in a Hyperconnected World</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Tech</span> CSS Architecture at Scale</span>
+        <span class="ticker-sep">â—†</span>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker-content ticker-content-clone" aria-hidden="true">
+        <span class="ticker-item"><span class="ticker-cat">Design</span> The Typographic Grid: Structure in Editorial Design</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">UI/UX</span> Functional Minimalism in UI Design</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Tech</span> The Renaissance of Vanilla JavaScript</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Design</span> Embracing the Asymmetric Web</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Productivity</span> Deep Work in a Hyperconnected World</span>
+        <span class="ticker-sep">â—†</span>
+        <span class="ticker-item"><span class="ticker-cat">Tech</span> CSS Architecture at Scale</span>
+        <span class="ticker-sep">â—†</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="hero container" id="hero-section">
+      <div class="hero-inner">
+        <div class="hero-text reveal">
+          <span class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Motion &amp; Craft
+          </span>
+          <h1>Stories and ideas, <br><span class="text-gradient">brought to life.</span></h1>
+          <p class="hero-desc">Explore deep essays, design systems, and modern web craft. An ultra-fast, minimalist editorial crafted with spring physics and clean aesthetics.</p>
+          <div class="hero-cta">
+            <a href="blog.html" class="btn btn-primary btn-lg">Explore Journal â†’</a>
+            <a href="admin.html" class="btn btn-outline btn-lg">Start Writing</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal stagger-2">
+          <div class="jitter-motion-stage" id="jitter-stage">
+            <!-- Window header -->
+            <div class="stage-topbar">
+              <div class="stage-window-controls">
+                <span class="stage-dot dot-red"></span>
+                <span class="stage-dot dot-yellow"></span>
+                <span class="stage-dot dot-green"></span>
+              </div>
+              <div class="stage-title">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+                motion-card.jitter
+              </div>
+              <span class="stage-status-live">LIVE</span>
+            </div>
+
+            <!-- Preset tabs -->
+            <div class="stage-presets" role="tablist">
+              <button class="preset-btn active" data-preset="spring">✦ Spring</button>
+              <button class="preset-btn" data-preset="pop">✦ Pop</button>
+              <button class="preset-btn" data-preset="bounce">✦ Bounce</button>
+              <button class="preset-btn" data-preset="slide">✦ Slide</button>
+            </div>
+
+            <!-- Canvas Stage with animated layers -->
+            <div class="stage-canvas">
+              <div class="jitter-animated-card" id="jitter-animated-card">
+                <div class="jitter-card-badge">✨ Featured Story</div>
+                <div class="jitter-floating-pill" id="jitter-clap-btn" title="Click to clap / react!">
+                  <span id="jitter-heart-icon">â¤ï¸</span>
+                  <span id="jitter-clap-count">1,420</span>
+                </div>
+                <div class="jitter-card-img-wrap">
+                  <img src="assets/images/minimal_ui.jpg" alt="Functional UI design preview" loading="eager">
+                </div>
+                <h3 class="jitter-card-title">Functional Minimalism &amp; Motion in Modern UI</h3>
+                <div class="jitter-card-meta">
+                  <div class="jitter-card-author">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Marcus Chen">
+                    <span>Marcus Chen</span>
+                  </div>
+                  <span>4 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom timeline scrubber -->
+            <div class="stage-timeline">
+              <button class="stage-play-btn" id="stage-play-toggle" aria-label="Replay or pause animation">
+                <svg id="stage-play-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <div class="stage-timeline-track" id="stage-track">
+                <div class="stage-timeline-progress" id="stage-progress"></div>
+                <div class="stage-timeline-playhead" id="stage-playhead"></div>
+              </div>
+              <span class="stage-timecode" id="stage-timecode">00:01.84</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- â”€â”€ Featured Posts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="container" style="padding-top: var(--s-16); padding-bottom: var(--s-8);">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-label">Latest Stories</span>
+          <h2 class="section-title">Featured &amp; Recent</h2>
+        </div>
+        <a href="blog.html" class="btn btn-outline">View All</a>
+      </div>
+
+      <div id="home-posts-container" class="posts-grid">
+        <!-- Skeleton placeholders -->
+        <article class="post-card featured">
+          <div class="post-image-wrapper skeleton"></div>
+          <div class="post-content" style="padding: var(--s-10) var(--s-12);">
+            <div class="skeleton skeleton-text w-1/2" style="margin-bottom:var(--s-4);height:14px;width:40%;"></div>
+            <div class="skeleton skeleton-text" style="height:40px;margin-bottom:var(--s-3);"></div>
+            <div class="skeleton skeleton-text w-3/4" style="height:40px;margin-bottom:var(--s-6);width:75%;"></div>
+            <div class="skeleton skeleton-text" style="height:16px;margin-bottom:var(--s-2);"></div>
+            <div class="skeleton skeleton-text w-3/4" style="height:16px;"></div>
+          </div>
+        </article>
+        <article class="post-card regular">
+          <div class="post-image-wrapper skeleton skeleton-img"></div>
+          <div class="post-content"><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text w-3/4"></div><div class="skeleton skeleton-text w-1/2"></div></div>
+        </article>
+        <article class="post-card regular">
+          <div class="post-image-wrapper skeleton skeleton-img"></div>
+          <div class="post-content"><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text w-3/4"></div><div class="skeleton skeleton-text w-1/2"></div></div>
+        </article>
+        <article class="post-card regular">
+          <div class="post-image-wrapper skeleton skeleton-img"></div>
+          <div class="post-content"><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text w-3/4"></div><div class="skeleton skeleton-text w-1/2"></div></div>
+        </article>
+      </div>
+
+      <div class="text-center mb-16 reveal">
+        <a href="blog.html" class="btn btn-outline">Explore the Archive â†’</a>
+      </div>
+    </section>
+
+    <!-- â”€â”€ Newsletter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <section class="container reveal">
+      <div class="newsletter-section">
+        <span class="section-label" style="color:rgba(255,255,255,.6);">Stay in the loop</span>
+        <h2>The GenZ-Blog Newsletter</h2>
+        <p class="newsletter-desc">Get our best essays and tutorials delivered to your inbox every Sunday morning. No spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!'; this.querySelector('button').disabled=true;">
+          <input type="email" placeholder="your@email.com" class="newsletter-input" required aria-label="Email address">
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo">GenZ-Blog<span class="brand-dot">.</span></a>
+        <p class="footer-brand-desc">A premium editorial platform for designers, developers, and thinkers who care about craft.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Pages</p>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Journal</a>
+          <a href="about.html">About</a>
+          <a href="admin.html">Write a Post</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">Topics</p>
+        <nav class="footer-links">
+          <a href="blog.html">Design</a>
+          <a href="blog.html">Technology</a>
+          <a href="blog.html">Productivity</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <nav class="footer-links">
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">RSS Feed</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 GenZ-Blog. Designed with intention.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

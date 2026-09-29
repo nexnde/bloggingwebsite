@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the GenZ-Blog team "” we'd love to hear from you.">
+  <title>Contact | GenZ-Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">GenZ-Blog<span class="brand-dot">.</span></a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html"  class="nav-link">Journal</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="admin.html" class="btn btn-primary">Write +</a>
+        <button class="icon-btn mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="reading-container pt-12 pb-16">
+
+      <div class="reveal">
+        <span class="page-hero-label">slide into our DMs 📬</span>
+        <h1 style="font-size:var(--t-4xl);margin-bottom:var(--s-4);">Let's Link Up. 🤝</h1>
+        <p style="font-size:var(--t-xl);color:var(--text-2);margin-bottom:var(--s-12);max-width:500px;line-height:1.65;">We read every message. Whether you have a story pitch, a question, or just want to say hello "” reach out.</p>
+      </div>
+
+      <div class="form-success" id="form-success" role="alert">
+        ✓ Message sent! We'll hit you back ASAP — no cap! 🔥
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group reveal" id="group-name">
+          <label class="form-label" for="name">Your Name 🙋 <span style="color:var(--accent)">*</span></label>
+          <input type="text" id="name" name="name" placeholder="e.g. Alex or @yourhandle" autocomplete="name">
+          <span class="error-msg">Ayo put your name fr (at least 2 chars).</span>
+        </div>
+        <div class="form-group reveal stagger-1" id="group-email">
+          <label class="form-label" for="email">Your Email 📧 <span style="color:var(--accent)">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@domain.com" autocomplete="email">
+          <span class="error-msg">That email ain't it — drop a valid one.</span>
+        </div>
+        <div class="form-group reveal stagger-2" id="group-subject">
+          <label class="form-label" for="subject">What's the vibe? 🎯</label>
+          <input type="text" id="subject" name="subject" placeholder="Collab, feedback, just saying hi…">
+        </div>
+        <div class="form-group reveal stagger-3" id="group-message">
+          <label class="form-label" for="message">Drop your message 💬 <span style="color:var(--accent)">*</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="spill it — hot takes, ideas, collabs, or just a lil hello 👋"></textarea>
+          <span class="error-msg">Say more than that bestie — at least 10 chars.</span>
+        </div>
+        <div class="reveal" style="transition-delay:.4s">
+          <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">Send It 🚀</button>
+        </div>
+      </form>
+
+      <hr class="divider" style="margin-top:var(--s-16);">
+
+      <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s-8);margin-top:var(--s-8);">
+        <div>
+          <h4 style="margin-bottom:var(--s-3);">Collab & Guest Posts ✍️</h4>
+          <p style="font-size:var(--t-sm);">For story pitches, guest posts, or press inquiries "” we review every submission.</p>
+        </div>
+        <div>
+          <h4 style="margin-bottom:var(--s-3);">Response Time ⚡</h4>
+          <p style="font-size:var(--t-sm);">We reply within 2 days — we're lowkey fast. Big collabs might take a bit longer tho.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo">GenZ-Blog<span class="brand-dot">.</span></a>
+        <p class="footer-brand-desc">A premium editorial platform for designers, developers, and thinkers who care about craft.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Pages</p>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Journal</a>
+          <a href="about.html">About</a>
+          <a href="admin.html">Write a Post</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">Topics</p>
+        <nav class="footer-links">
+          <a href="blog.html">Design</a>
+          <a href="blog.html">Technology</a>
+          <a href="blog.html">Productivity</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <nav class="footer-links">
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Twitter</a>
+          <a href="#">RSS Feed</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 GenZ-Blog. Designed with intention.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
